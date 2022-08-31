@@ -1,0 +1,45 @@
+@import url(colors.css);
+@import url(fonts.css);
+
+.page-content {
+  margin: auto;
+  max-width: 80rem;
+}
+
+.diagonal-cut {
+  height: 450px;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 60% , 0 100%);
+  background-color: var(--blue);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* hero */
+
+.hero {
+  font-size: 1.5em;
+  position: relative;
+  margin: 10px 20px;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0.25em auto;
+  text-align: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.hero img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  box-shadow: 0 5px 8px #000a;
+}

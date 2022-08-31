@@ -1,6 +1,10 @@
 @import url(colors.css);
 @import url(fonts.css);
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .page-content {
   margin: auto;
   max-width: 80rem;
@@ -17,12 +21,20 @@
   z-index: -1;
 }
 
+
+/* shared classes */
+
+.section-content {
+  margin: 0 20px;
+}
+
+
 /* hero */
 
 .hero {
   font-size: 1.5em;
   position: relative;
-  margin: 10px 20px;
+  margin-top: 10px;
 }
 
 .hero h1 {
@@ -42,4 +54,44 @@
   margin: auto;
   max-width: 100%;
   box-shadow: 0 5px 8px #000a;
+}
+
+/* list of icon-links */
+
+.link-list {
+  display: flex;
+  justify-content: center;
+  gap: 0.8em;
+  padding: 0;
+  margin: auto;
+  font-size: 2em;
+  list-style: none;
+}
+
+.link-list a,
+.link-list a:visited {
+  color: var(--main-dark);
+}
+
+.link-list li {
+  transition: transform 0.2s ease-in-out;
+}
+
+.link-list li:hover {
+  transform: scale(1.2);
+}
+/* about me */
+
+.about-me {
+  font-size: 1.5em;
+}
+
+.about-me h2 {
+  text-align: center;
+  color: var(--main-dark);
+}
+
+.about-me p {
+  color: var(--sub-dark);
+  line-height: 1.5em;
 }

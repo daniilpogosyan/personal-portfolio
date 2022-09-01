@@ -25,7 +25,7 @@ body {
 /* shared classes */
 
 .section-content {
-  margin: 0 20px;
+  padding: 0 20px;
 }
 
 
@@ -148,4 +148,23 @@ body {
 
 .card .content {
   padding: 12px 20px
+}
+
+/* contact me */
+
+.contact-me {
+  padding-bottom: 40px;
+  background-color: var(--blue);
+  font-size: 1.5em;
+  color: var(--main-light);
+}
+
+.contact-me h2 {
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+}
+
+.footer img {
+  width: 100%;
 }

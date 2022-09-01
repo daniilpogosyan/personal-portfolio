@@ -32,7 +32,6 @@ body {
 /* hero */
 
 .hero {
-  font-size: 1.5em;
   position: relative;
   margin-top: 10px;
 }
@@ -167,4 +166,31 @@ body {
 
 .footer img {
   width: 100%;
+}
+
+
+/* adjustings for tablets */
+
+@media (min-width: 800px) {
+  /* hero */
+  .hero {
+    margin-top: -160px;
+    margin-left: 20px;
+    float: left;
+  }
+  .hero h1 {
+    overflow: visible;
+    left: 100%;
+  }
+
+  /* about-me */
+  .about-me article {
+    background-color: #fff;
+    margin: 200px 80px 80px;
+    box-shadow: 0 8px 12px #0008;
+  }
+
+  .about-me .section-content {
+    padding: 20px 20px 50px;
+  }
 }
